@@ -1,8 +1,8 @@
-import { PostContext } from "@/contexts/PostContext";
-import { useContext } from "react";
+import { usePost } from "@/contexts/PostContext";
+
 
 export function PostList(){
-    const postCtx = useContext(PostContext);
+    const postCtx = usePost();
 
     function deletePost(id: number){
             postCtx?.deletePost(id);

@@ -6,7 +6,7 @@ import { PostList } from "./components/PostList";
 
 function Page(){
   return (
-    <div className="container mx-auto max-w-screen-md">
+    <div className="container mx-auto max-w-screen-md p-6">
       <PostProvider>
         <Header />
         <PostList/>

@@ -1,9 +1,9 @@
-import { PostContext } from "@/contexts/PostContext";
-import { useContext } from "react";
+import { usePost } from "@/contexts/PostContext";
+
 
 export function Footer(){
     
-    const postCtx = useContext(PostContext);
+    const postCtx = usePost();
     
     return (
         <footer className="px-4 mt-2 text-sm">
